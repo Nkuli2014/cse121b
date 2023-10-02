@@ -1,8 +1,9 @@
 // 🔍 Part 1 error
 const userName = "Moroni";
 console.log(`let versus const: ${userName}`);
-userName = "Moronihah"; // This line will cause an error because userName is declared with const
+// userName = "Moronihah"; // Remove or comment out this line
 console.log(`let versus const: ${userName}`);
+
 
 // 🔍 Part 2 error
 const currentDateAndTime = new Date(); // Fixed the assignment by using new Date()
@@ -14,10 +15,9 @@ let theTotal = total(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 console.log(`The total is ${theTotal}`);
 
 // 'total' function declaration
-function total(...theNumbers) {
-	return theNumbers.reduce((sum, aNumber) => sum + aNumber, 0);
+  function calculateTotal(...numbers) {
+	return numbers.reduce((sum, number) => sum + number, 0);
   }
-
 
 
 
