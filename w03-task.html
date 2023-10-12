@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+</head>
+<body>
+  <h1>Calculator</h1>
+
+  <label for="add1">Number 1:</label>
+  <input type="number" id="add1">
+  <br>
+  <label for="add2">Number 2:</label>
+  <input type="number" id="add2">
+  <br>
+  <button id="addNumbers">Add</button>
+  <p id="sum"></p>
+  <br>
+
+  <label for="subtract1">Number 1:</label>
+  <input type="number" id="subtract1">
+  <br>
+  <label for="subtract2">Number 2:</label>
+  <input type="number" id="subtract2">
+  <br>
+  <button id="subtractNumbers">Subtract</button>
+  <p id="difference"></p>
+  <br>
+  
+  <label for="multiply1">Number 1:</label>
+  <input type="number" id="multiply1">
+  <br>
+  <label for="multiply2">Number 2:</label>
+  <input type="number" id="multiply2">
+  <br>
+  <button id="multiplyNumbers">Multiply</button>
+  <p id="product"></p>
+  <br>
+  
+  <label for="divide1">Number 1:</label>
+  <input type="number" id="divide1">
+  <br>
+  <label for="divide2">Number 2:</label>
+  <input type="number" id="divide2">
+  <br>
+  <button id="divideNumbers">Divide</button>
+  <p id="quotient"></p>
+  <br>
+
+  <script>
+    // Function Declaration - Addition
+    function add(number1, number2) {
+      return number1 + number2;
+    }
+
+    // Check Your Understanding - Addition
+    function addNumbers() {
+      var add1 = Number(document.getElementById("add1").value);
+      var add2 = Number(document.getElementById("add2").value);
+      var sum = add(add1, add2);
+      document.getElementById("sum").textContent = sum;
+    }
+
+    // Event Listener - Addition
+    document.getElementById("addNumbers").addEventListener("click", addNumbers);
+
+    // Function Declaration - Subtraction
+    function subtract(number1, number2) {
+      return number1 - number2;
+    }
+
+    // Check Your Understanding - Subtraction
+    function subtractNumbers() {
+      var subtract1 = Number(document.getElementById("subtract1").value);
+      var subtract2 = Number(document.getElementById("subtract2").value);
+      var difference = subtract(subtract1, subtract2);
+      document.getElementById("difference").textContent = difference;
+    }
+
+    // Event Listener - Subtraction
+    document.getElementById("subtractNumbers").addEventListener("click", subtractNumbers);
+
+    // Function Declaration - Multiplication
+    function multiply(number1, number2) {
+      return number1 * number2;
+    }
+
+    // Check Your Understanding - Multiplication
+    function multiplyNumbers() {
+      var multiply1 = Number(document.getElementById("multiply1").value);
+      var multiply2 = Number(document.getElementById("multiply2").value);
+      var product = multiply(multiply1, multiply2);
+      document.getElementById("product").textContent = product;
+    }
+
+    // Event Listener - Multiplication
+    document.getElementById("multiplyNumbers").addEventListener("click", multiplyNumbers);
+
+    // Function Declaration - Division
+    function divide(number1, number2) {
+      return number1 / number2;
+    }
+
+    // Check Your Understanding - Division
+    function divideNumbers() {
+      var divide1 = Number(document.getElementById("divide1").value);
+      var divide2 = Number(document.getElementById("divide2").value);
+      var quotient = divide(divide1, divide2);
+      document.getElementById("quotient").textContent = quotient;
+    }
+
+    // Event Listener - Division
+    document.getElementById("divideNumbers").addEventListener("click", divideNumbers);
+  </script>
+</body>
+</html>
+
+
+
